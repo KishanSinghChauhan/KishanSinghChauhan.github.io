@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Astro Space</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-setup" id="main-page">
+        <div class="first-sec">
+          <div class="controls">
+            <div class="controls-sec">
+              <div class="controls-sec-first card">
+                <h3 class="box-head">Light Groups</h3>
+                <button id="assign-groups">Assign Groups</button>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 16px;
+                  "
+                >
+                  <div class="border" style="margin-right: 8px">
+                    <p class="arrow">&#8593;</p>
+                    <p class="arrow" style="margin-top: 12px">&#8595;</p>
+                  </div>
+                  <div class="border">
+                    <h2>99</h2>
+                    <p>Active Group</p>
+                  </div>
+                </div>
+              </div>
+              <div class="controls-sec-second card">
+                <h3 class="box-head">Operating Mode</h3>
+                <button>DC</button>
+                <button>PWM</button>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 16px;
+                  "
+                >
+                  <p class="border">Reference Setting</p>
+                  <p class="border">500mA</p>
+                </div>
+              </div>
+            </div>
+            <button class="set-store" style="height: 40px" id="set-values">
+              SET/STORE VALUES TO GROUPS
+            </button>
+          </div>
+          <div class="card temp">
+            <h2 class="box-head">TEMP</h2>
+            <p style="margin-bottom: 3px">Main</p>
+            <p class="border" style="margin-bottom: 8px">100 ℃</p>
+            <p style="margin-bottom: 3px">Brd1</p>
+            <p class="border" style="margin-bottom: 8px">100 ℃</p>
+            <p style="margin-bottom: 3px">Brd2</p>
+            <p class="border">100 ℃</p>
+          </div>
+        </div>
+        <div class="second-sec">
+          <div class="donation-meter card">
+            <h5 style="text-align: center; margin-bottom: 20px">
+              Master Control
+            </h5>
+            <span class="glass">
+              <strong class="total" style="bottom: 60%">60</strong>
+              <span class="amount" style="height: 60%"></span>
+            </span>
+            <div class="bulb">
+              <span class="red-circle"></span>
+              <span class="filler">
+                <span></span>
+              </span>
+            </div>
+
+            <div class="enable">
+              <div>
+                <span></span>
+                <p>Enable</p>
+              </div>
+              <div>
+                <span></span>
+                <p>Disbale</p>
+              </div>
+            </div>
+            <p style="margin: 6px 0">Voltage</p>
+            <p class="border" style="padding: 4px 6px">35.5V</p>
+            <p style="margin: 6px 0">Current</p>
+            <p class="border" style="padding: 4px 6px">1000mA</p>
+          </div>
+          <div class="donation-meter card">
+            <h5 style="text-align: center; margin-bottom: 20px">
+              Master Control
+            </h5>
+            <span class="glass">
+              <strong class="total" style="bottom: 60%">60</strong>
+              <span class="amount" style="height: 60%"></span>
+            </span>
+            <div class="bulb">
+              <span class="red-circle"></span>
+              <span class="filler">
+                <span></span>
+              </span>
+            </div>
+
+            <div class="enable">
+              <div>
+                <span></span>
+                <p>Enable</p>
+              </div>
+              <div>
+                <span></span>
+                <p>Disbale</p>
+              </div>
+            </div>
+            <p style="margin: 6px 0">Voltage</p>
+            <p class="border" style="padding: 4px 6px">35.5V</p>
+            <p style="margin: 6px 0">Current</p>
+            <p class="border" style="padding: 4px 6px">1000mA</p>
+          </div>
+          <div class="donation-meter card">
+            <h5 style="text-align: center; margin-bottom: 20px">
+              Master Control
+            </h5>
+            <span class="glass">
+              <strong class="total" style="bottom: 60%">60</strong>
+              <span class="amount" style="height: 60%"></span>
+            </span>
+            <div class="bulb">
+              <span class="red-circle"></span>
+              <span class="filler">
+                <span></span>
+              </span>
+            </div>
+
+            <div class="enable">
+              <div>
+                <span></span>
+                <p>Enable</p>
+              </div>
+              <div>
+                <span></span>
+                <p>Disbale</p>
+              </div>
+            </div>
+            <p style="margin: 6px 0">Voltage</p>
+            <p class="border" style="padding: 4px 6px">35.5V</p>
+            <p style="margin: 6px 0">Current</p>
+            <p class="border" style="padding: 4px 6px">1000mA</p>
+          </div>
+          <div class="donation-meter card">
+            <h5 style="text-align: center; margin-bottom: 20px">
+              Master Control
+            </h5>
+            <span class="glass">
+              <strong class="total" style="bottom: 60%">60</strong>
+              <span class="amount" style="height: 60%"></span>
+            </span>
+            <div class="bulb">
+              <span class="red-circle"></span>
+              <span class="filler">
+                <span></span>
+              </span>
+            </div>
+
+            <div class="enable">
+              <div>
+                <span></span>
+                <p>Enable</p>
+              </div>
+              <div>
+                <span></span>
+                <p>Disbale</p>
+              </div>
+            </div>
+            <p style="margin: 6px 0">Voltage</p>
+            <p class="border" style="padding: 4px 6px">35.5V</p>
+            <p style="margin: 6px 0">Current</p>
+            <p class="border" style="padding: 4px 6px">1000mA</p>
+          </div>
+          <div class="donation-meter card">
+            <h5 style="text-align: center; margin-bottom: 20px">
+              Master Control
+            </h5>
+            <span class="glass">
+              <strong class="total" style="bottom: 60%">60</strong>
+              <span class="amount" style="height: 60%"></span>
+            </span>
+            <div class="bulb">
+              <span class="red-circle"></span>
+              <span class="filler">
+                <span></span>
+              </span>
+            </div>
+
+            <div class="enable">
+              <div>
+                <span></span>
+                <p>Enable</p>
+              </div>
+              <div>
+                <span></span>
+                <p>Disbale</p>
+              </div>
+            </div>
+            <p style="margin: 6px 0">Voltage</p>
+            <p class="border" style="padding: 4px 6px">35.5V</p>
+            <p style="margin: 6px 0">Current</p>
+            <p class="border" style="padding: 4px 6px">1000mA</p>
+          </div>
+          <div class="donation-meter card">
+            <h5 style="text-align: center; margin-bottom: 20px">
+              Master Control
+            </h5>
+            <span class="glass">
+              <strong class="total" style="bottom: 60%">60</strong>
+              <span class="amount" style="height: 60%"></span>
+            </span>
+            <div class="bulb">
+              <span class="red-circle"></span>
+              <span class="filler">
+                <span></span>
+              </span>
+            </div>
+
+            <div class="enable">
+              <div>
+                <span></span>
+                <p>Enable</p>
+              </div>
+              <div>
+                <span></span>
+                <p>Disbale</p>
+              </div>
+            </div>
+            <p style="margin: 6px 0">Voltage</p>
+            <p class="border" style="padding: 4px 6px">35.5V</p>
+            <p style="margin: 6px 0">Current</p>
+            <p class="border" style="padding: 4px 6px">1000mA</p>
+          </div>
+          <div class="donation-meter card">
+            <h5 style="text-align: center; margin-bottom: 20px">
+              Master Control
+            </h5>
+            <span class="glass">
+              <strong class="total" style="bottom: 60%">60</strong>
+              <span class="amount" style="height: 60%"></span>
+            </span>
+            <div class="bulb">
+              <span class="red-circle"></span>
+              <span class="filler">
+                <span></span>
+              </span>
+            </div>
+
+            <div class="enable">
+              <div>
+                <span></span>
+                <p>Enable</p>
+              </div>
+              <div>
+                <span></span>
+                <p>Disbale</p>
+              </div>
+            </div>
+            <p style="margin: 6px 0">Voltage</p>
+            <p class="border" style="padding: 4px 6px">35.5V</p>
+            <p style="margin: 6px 0">Current</p>
+            <p class="border" style="padding: 4px 6px">1000mA</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-setup" id="second-page">
+        <div class="card light-setup">
+          <h2 style="margin-bottom: 10px">Light Groups Setup</h2>
+          <p>Assign to group</p>
+          <div class="light-flex">
+            <div class="border">
+              <p class="arrow">&#8593;</p>
+              <p class="arrow" style="margin-top: 8px">&#8595;</p>
+            </div>
+            <h1 class="border" style="min-width: 60%">99</h1>
+            <button>Assign</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="
+            text-align: center;
+            padding: 20px;
+            max-width: 70%;
+            margin: 40px auto;
+          "
+        >
+          <h3 style="margin-bottom: 20px">Serial Numbers of Lights Found</h3>
+          <div class="select-setup">
+            <input type="checkbox" />
+            <p class="border2">Serial no. 1</p>
+            <p class="border2">Group</p>
+          </div>
+          <div class="select-setup">
+            <input type="checkbox" />
+            <p class="border2">Serial no. 1</p>
+            <p class="border2">Group</p>
+          </div>
+          <div class="select-setup">
+            <input type="checkbox" />
+            <p class="border2">Serial no. 1</p>
+            <p class="border2">Group</p>
+          </div>
+          <div class="select-setup">
+            <input type="checkbox" />
+            <p class="border2">Serial no. 1</p>
+            <p class="border2">Group</p>
+          </div>
+          <div class="select-setup">
+            <input type="checkbox" />
+            <p class="border2">Serial no. 1</p>
+            <p class="border2">Group</p>
+          </div>
+          <div class="select-setup">
+            <input type="checkbox" />
+            <p class="border2">Serial no. 1</p>
+            <p class="border2">Group</p>
+          </div>
+        </div>
+        <div style="text-align: center">
+          <button style="margin: 0 10px" id="cancel">Cancel</button>
+          <button style="margin: 0 10px" id="ok">Ok</button>
+        </div>
+      </div>
+      <div class="main-setup" id="third-page">
+        <div class="card light-setup">
+          <h2 style="margin-bottom: 10px">Light Groups Scheduling</h2>
+          <p>Assign to group</p>
+          <div class="light-flex">
+            <div class="border">
+              <p class="arrow">&#8593;</p>
+              <p class="arrow" style="margin-top: 8px">&#8595;</p>
+            </div>
+            <h1 class="border" style="min-width: 60%">99</h1>
+            <button>Assign</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="
+            text-align: center;
+            padding: 20px;
+            max-width: 70%;
+            margin: 40px auto;
+          "
+        >
+          <h3 style="margin-bottom: 20px">Serial Numbers of Lights Found</h3>
+          <div class="select-schedule">
+            <h4>Ramp Up time</h4>
+            <h4>On Time</h4>
+            <h4>Off Time</h4>
+            <h4>HRamp Down Time</h4>
+          </div>
+          <div class="select-schedule">
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+          </div>
+          <div class="select-schedule">
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+          </div>
+          <div class="select-schedule">
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+          </div>
+          <div class="select-schedule">
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+          </div>
+          <div class="select-schedule">
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+            <p class="border2">HH:MM</p>
+          </div>
+        </div>
+        <div style="text-align: center">
+          <button style="margin: 0 10px" id="cancel1">Cancel</button>
+          <button style="margin: 0 10px" id="ok1">Ok</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

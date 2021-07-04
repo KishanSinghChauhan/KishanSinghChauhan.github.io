@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgb(146 150 156 / 30%);
+}
+
+.border {
+  border: 2px solid darkgray;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.border2 {
+  border: 1px solid darkgray;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.box-head {
+  margin-bottom: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-setup {
+  margin: 80px 0;
+}
+
+.arrow {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.first-sec {
+  display: flex;
+}
+
+.controls {
+  width: 80%;
+}
+
+.controls-sec {
+  display: flex;
+}
+
+.controls-sec-first,
+.controls-sec-second {
+  flex: 1;
+  margin-right: 20px;
+  padding: 24px;
+  text-align: center;
+}
+
+.temp {
+  width: 20%;
+  padding: 24px;
+  text-align: center;
+}
+
+.set-store {
+  width: 98%;
+  margin-top: 24px;
+}
+
+button {
+  cursor: pointer;
+  height: 32px;
+  border-radius: 6px;
+  border: 0;
+  color: #fff;
+  background: blue;
+  padding: 0 16px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.second-sec {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.donation-meter {
+  width: 100px;
+  padding: 20px 10px;
+}
+
+.donation-meter p {
+  font-size: 14px;
+  text-align: center;
+}
+.glass {
+  background: #e5e5e5;
+  border-radius: 100px 100px 0 0;
+  display: block;
+  height: 300px;
+  margin: 0 35px 10px;
+  position: relative;
+  width: 20px;
+}
+.amount {
+  background: #f34e54;
+  border-radius: 100px;
+  display: block;
+  width: 20px;
+  position: absolute;
+  bottom: 5px;
+}
+strong {
+  display: block;
+  text-align: center;
+}
+.goal {
+  font-size: 30px;
+}
+.total {
+  font-size: 12px;
+  position: absolute;
+  right: 26px;
+}
+
+.bulb {
+  background: #e5e5e5;
+  border-radius: 100px;
+  display: block;
+  height: 50px;
+  margin: 0 35px 10px;
+  position: relative;
+  top: -20px;
+  right: 15px;
+  width: 50px;
+}
+.red-circle {
+  background: #f34e54;
+  border-radius: 100px;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.filler {
+  background: #f34e54;
+  border-radius: 100px 100px 0 0;
+  display: block;
+  height: 30px;
+  width: 20px;
+  position: relative;
+  top: -65px;
+  right: -15px;
+  z-index: 30;
+}
+
+.enable {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  padding: 6px;
+}
+
+.enable > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enable > div p {
+  font-size: 10px;
+}
+
+.enable > div span {
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  margin-bottom: 6px;
+}
+
+.light-setup {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.light-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.select-schedule,
+.select-setup {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.select-setup p {
+  min-width: 40%;
+}
+
+.select-schedule p,
+h4 {
+  min-width: 20%;
+}
